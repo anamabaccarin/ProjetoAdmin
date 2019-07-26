@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //Integração com Rede Social
+        Laravel\Socialite\SocialiteServiceProvider::class
+
     ],
 
     /*
@@ -225,7 +228,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'socialite' => Laravel\Socialite\Facades\Socialite::class
 
     ],
 
+    
 ];

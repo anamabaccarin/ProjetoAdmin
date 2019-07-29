@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->string('img', 292)->nullable();
             $table->string('provider')->nullable();
-            $table->bigInteger('provider_id');
+            $table->bigInteger('provider_id')->nullable();
             $table->timestamps();
         });
     }
